@@ -1,4 +1,6 @@
-1. To identify the phishing characteristics of email, we have to start with examining the Sender's email:-
+Examining the Sender's Email:-
+-
+To identify the phishing characteristics of email, we have to start with examining the Sender's email:-
   - In the screenshot above we can see that, this email is a notice sended by the Open AI regarding Subscription.
   - We can see that the Display name of organization is OpenAI ServiceStatus but the actual domain behind display name is <mark>sage.develop@msa.hinet.net</mark>.
   - The genuine domain resposnible OpenAI service status is <mark>https://status.openai.com</mark>(reference <a href="https://help.openai.com/en/articles/11725090-verifying-communications-from-openai">website</a>).
@@ -9,7 +11,7 @@
 
 
 
-2. Verifying Email Header using Google Admin Toolbox Messageheader and MX Toolbox.
+Verifying Email Header using Google Admin Toolbox Messageheader and MX Toolbox.
    - 
 
 
