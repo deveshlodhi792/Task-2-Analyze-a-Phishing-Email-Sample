@@ -1,4 +1,4 @@
-Examining the Sender's Email:-
+# Examining the Sender's Email:-
 -
 To identify the phishing characteristics of email, we have to start with examining the Sender's email:-
   - In the screenshot above we can see that, the email is a notification sended by the Open AI regarding Subscription.
@@ -11,28 +11,41 @@ To identify the phishing characteristics of email, we have to start with examini
 
 
 
+# Analyzing the email headers using MX Toolbox header analyzer these discrepancies are found:-
 
-Checking Email Header:-
--
+1.  Sender Identity mismatch
+   - From: OpenAI ServiceStatus <sage.develop@msa.hinet.net>
+   - Display name: OpenAI
+   - Actual Domain: msa.hinet.net
 
--   We have divided headers into four categories to check for discrepancies:-
-    1. Authentication-related headers
-    2. Sender Identity headers
-    3. Routing headers
-    4. Content-related headers
- 
--  First we look on Authentication headers:
-    + SPF (Sender Policy Framework): This protocol verifies that the sending mail server whether authorized or not.
-    + DKIM (Domain Keys Identified Mail): This protocol ensures the email content has not been altered and verifies the sender's domain via cryptographic signature.
-    + DMARC (Domain-based Message Authentication, Reporting & Conformance) : This protocol ties SPF and DKIM together and defines policies for handling failed authentication.
-    + After analyzing using MX Toolbox header analyzer, here are the results:
-      - SPF = Pass
-      - DKIM = Pass
-      - DMARC = Pass
+ + OpenAI would send notifications from domain like:
+   - openai.com, or
+   - chatgpt.com
   
-- Sender's Identity header:
-    + After analyzing the email by MX Toolbox header analyzer, these headers details are found :-
-      - From: OpenAI ServiceStatus<sage.develop@msa.hinet.net>
-      - Return-Path: sage.develop@msa.hinet.net
+2.  Missing 'Reply-To:' header
+   -  Reply-to header is not showing in email
+   -  It Falls back to From address
 
+  + A legitimate domain uses a dedicated reply/support address
 
+3. Link mismatch when hovering over
+   - Visible CTA: "Confirm Now"
+   - Actual Link showing : https://www.rfr.bz/ed1cb7c
+   - Hidden reference: cleverapps.io
+  
+  + Legitimate emails have links to same domain.
+
+4. Authentication passes but misleading
+   - SPF: Pass
+   - DKIM : Pass
+   - DMARC : Pass
+
+   + While these headers are validate msa.hinet.net
+   + But they not whether the sender is actually OpenAI.
+  
+
+# Summary
+- 
+
+  
+  
