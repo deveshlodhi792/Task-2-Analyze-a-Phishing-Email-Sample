@@ -31,7 +31,8 @@ Checking Email Header:-
       - DMARC = Pass
   
 - Sender's Identity header:
-    + After analyzing the email by MX Toolbox header analyzer, these details are found :-
-      - From: 
+    + After analyzing the email by MX Toolbox header analyzer, these headers details are found :-
+      - From: OpenAI ServiceStatus<sage.develop@msa.hinet.net>
+      - Return-Path: sage.develop@msa.hinet.net
 
 
