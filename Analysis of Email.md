@@ -31,7 +31,7 @@ Checking Email Header:-
       - DMARC = Pass
   
 - Sender's Identity header:
-    + After analyzing the email by MX Toolbox header analyzer, I got these details about identity headers :-
+    + After analyzing the email by MX Toolbox header analyzer, these details are found :-
       - From: 
 
 
