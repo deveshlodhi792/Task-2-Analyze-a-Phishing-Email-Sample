@@ -1,7 +1,6 @@
 # Examining the Sender's Email:-
 -
-To identify the phishing characteristics of email, we have to start with examining the Sender's email:-
-  - In the screenshot above we can see that, the email is a notification sended by the Open AI regarding Subscription.
+  - The email is a notification sended by the Open AI regarding Subscription.
   - We can see that the Display name of organization is OpenAI ServiceStatus but the actual domain behind display name is <mark>sage.develop@msa.hinet.net</mark>.
   - The genuine domain responsible for OpenAI service status is <mark>https://status.openai.com</mark>(reference <a href="https://help.openai.com/en/articles/11725090-verifying-communications-from-openai">website</a>).
   - It suggests that the email is compromised as it is not from authentic domain.
@@ -48,6 +47,13 @@ To identify the phishing characteristics of email, we have to start with examini
    - Display Name term "ServiceStatus" is improperly formatted or a typo. 
 
   + Legitimate Domains cannot improperly format their display name.
+
+
+Conclusion
+- The email has come from a domain which is unrelated to the OpenAI.
+- The links embedded in the email also redirecting to the unrelated and unknown website.
+- The email sender is trying to mislead the receiver.
+- We can conclude that it is Legit "Phishing" attempt.
   
   
   
