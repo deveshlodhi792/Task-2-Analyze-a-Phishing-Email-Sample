@@ -25,7 +25,7 @@ To identify the phishing characteristics of email, we have to start with examini
 2.  Missing 'Reply-To:' header
    -  Reply-to header is not showing in email
    -  It Falls back to From address
-
+  
   + A legitimate domain uses a dedicated reply/support address
 
 3. Link mismatch when hovering over
@@ -37,15 +37,17 @@ To identify the phishing characteristics of email, we have to start with examini
 
 4. Authentication passes but misleading
    - SPF: Pass
+   - SPF: Pass
    - DKIM : Pass
    - DMARC : Pass
 
-   + While these headers are validate msa.hinet.net
-   + But they not whether the sender is actually OpenAI.
+  +  While these headers are validate msa.hinet.net
+  +  But they not whether the sender is actually OpenAI.
   
+6. Improperly formatted term
+   - Display Name term "ServiceStatus" is improperly formatted or a typo. 
 
-# Summary
-- 
-
+  + Legitimate Domains cannot improperly format their display name.
+  
   
   
